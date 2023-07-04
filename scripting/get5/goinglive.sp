@@ -70,7 +70,9 @@ Action Timer_MatchLive(Handle timer) {
   char tag[64];
   g_MessagePrefixCvar.GetString(tag, sizeof(tag));
   if (!StrEqual(tag, DEFAULT_TAG)) {
-    Get5_MessageToAll("Powered by {YELLOW}Get5");
+    Get5_MessageToAll("Plugin version - Get5-v0.13.1");
+    Get5_MessageToAll("\x02Custom player models not allowed");
+    Get5_MessageToAll("Commands - !pause, !stop, !tech. Overtime enabled");
   }
 
   return Plugin_Handled;
